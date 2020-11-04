@@ -14,6 +14,7 @@ export class PieChartCtrl extends MetricsPanelCtrl {
 
     var panelDefaults = {
       pieType: 'pie',
+      showValue: false,
       legend: {
         show: true, // disable/enable legend
         values: true

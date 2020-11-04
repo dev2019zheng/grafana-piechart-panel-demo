@@ -81,6 +81,7 @@ System.register(['app/plugins/sdk', 'lodash', 'app/core/utils/kbn', 'app/core/ti
 
           var panelDefaults = {
             pieType: 'pie',
+            showValue: false,
             legend: {
               show: true, // disable/enable legend
               values: true

@@ -133,6 +133,11 @@ System.register(['lodash', 'jquery', 'jquery.flot', 'jquery.flot.pie'], function
         }
       }
 
+      if (ctrl.panel.showValue) {
+        var peiChartValueHtml = '<div class="piechart-value">' + data[0].legendData + '</div>';
+        plotCanvas.append(peiChartValueHtml);
+      }
+
       elem.html(plotCanvas);
 
       $.plot(plotCanvas, data, options);

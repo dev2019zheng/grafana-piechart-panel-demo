@@ -130,6 +130,11 @@ export default function link(scope, elem, attrs, ctrl) {
       }
     }
 
+    if(ctrl.panel.showValue) {
+      const peiChartValueHtml = `<div class="piechart-value">${data[0].legendData}</div>`;
+      plotCanvas.append(peiChartValueHtml);
+    }
+    
     elem.html(plotCanvas);
 
     $.plot(plotCanvas, data, options);
